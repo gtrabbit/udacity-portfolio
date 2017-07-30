@@ -15,9 +15,9 @@ p {
 header {
 	display: flex;
 	overflow: hidden;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
-	padding: 2%;
+	padding: 2% 2% 0 2%;
 }
 
 main a {
@@ -38,6 +38,7 @@ main a {
 	transition: all 1s;
 	width: 68px;
 	position: relative;
+	left: 10%;
 }
 
 .icon-wrapper:hover {
@@ -80,7 +81,6 @@ main a {
 	width: 100%;
 	background-color: #7d97ad;
 	height: 3px;
-	margin-top: 10px;
 	margin-bottom: 10px;
 	border-radius: 3px;
 }
@@ -172,4 +172,10 @@ footer a:link, footer a:visited {
 
 footer a:hover {
 	color: orange;
+}
+
+@media screen and (max-width: 400px) {
+	.big-image {
+		background-image: url(../images/leaves-sm.jpg);
+	}
 }
