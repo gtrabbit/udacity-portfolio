@@ -1,0 +1,175 @@
+body {
+	color: #2d3c49;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+main {
+	padding: 1%;
+}
+
+p {
+	margin: 0;
+}
+
+header {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2%;
+}
+
+main a {
+	text-decoration: none;
+	color: #2d3c49;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: solid orange 3px;
+	mix-blend-mode: luminosity;
+	
+}
+
+.icon-wrapper {
+	transition: all 1s;
+	width: 68px;
+	position: relative;
+}
+
+.icon-wrapper:hover {
+	background-color: white;	
+}
+
+.icon-wrapper:hover::after{
+	opacity: 1;
+	font-size: 7pt;
+}
+
+.icon-wrapper::after {
+	content: "Udacity Profile";
+	opacity: 0;
+	color: white;
+	transition: all 1s;
+	position: absolute;
+	left: 3px;
+	top: 35%;
+	font-size: 6pt;
+	padding: 1%;
+	margin: auto;
+	background-color: rgba(30,30,30,0.3);
+}
+
+.dev-name {
+	color: #2d3c49;
+	text-align: right;
+}
+
+.dev-name h1 {
+	margin: 0;
+}
+
+.dev-name p {
+	font-size: 10pt;
+}
+
+.fake-hr {
+	width: 100%;
+	background-color: #7d97ad;
+	height: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.big-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/leaves-medium.jpg);
+	width: 100%;
+	height: 40vh;
+	background-position: 50% 50%;
+	font-size: 1pt;
+	color: transparent;
+}
+
+.featured-work {
+	display: flex;
+	flex-wrap: wrap;
+	color: #7d97ad;
+}
+
+.featured-work h2 {
+	width: 95%;
+	padding-left: 5%;
+}
+
+.project {
+	min-width: 150px;
+	width: 20%;
+	margin: 10px;
+	padding: 10px;
+	flex-grow: 1;
+	overflow: hidden;
+	justify-content: center;
+	text-align: center;
+	font-size: 9pt;
+	word-wrap: break-word;
+	background-color: rgba(255,255,255,0.1);
+	transition: background-color 0.4s;
+	border: solid white 1px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px 1px silver;
+}
+
+.project:hover {
+	background-color: white;
+	border: solid #02b3e4 1px;
+}
+
+.project-icon {
+	width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+	border: solid silver 1px;
+	box-sizing: border-box;
+	mix-blend-mode: luminosity;
+}
+
+.project-title {
+	font-weight: 600;
+	font-size: medium;
+	margin: 2%;
+}
+
+footer {
+	border-top: solid #02b3e4 2px;
+	background-color: #2d3c49;
+	color: #eee;
+	padding: 2%;
+	font-size: smaller;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+footer * {
+	text-align: center;
+	flex-grow: 1;
+	margin: 1%;
+}
+
+footer a:link, footer a:visited {
+	color: #02b3e4;
+
+}
+
+footer a:hover {
+	color: orange;
+}
